@@ -1,0 +1,22 @@
+<!-- templates/inicio/inicio.html -->
+
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1>Misión</h1>
+  <p>{{ inicio.mision }}</p>
+
+  <h1>Visión</h1>
+  <p>{{ inicio.vision }}</p>
+
+  <h1>Objetivo General</h1>
+  <p>{{ inicio.objetivo_general }}</p>
+
+  <h1>Objeto Social</h1>
+  <p>{{ inicio.objeto_social }}</p>
+
+  <h1>Objetivos Específicos</h1>
+  <p>{{ inicio.objetivos_especificos }}</p>
+</div>
+{% endblock %}

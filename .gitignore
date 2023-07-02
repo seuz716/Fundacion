@@ -1,0 +1,12 @@
+# Archivos y directorios generados por Django
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Archivos de configuración local (ajústalos según tus necesidades)
+/config/settings_local.py
+/config/.env
+
+# Otros archivos y directorios específicos de tu proyecto
+/media/
+/static/

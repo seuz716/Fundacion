@@ -1,0 +1,59 @@
+alenu_servir/  (Directorio principal del proyecto)
+    manage.py
+    templates
+        base
+            base.html
+    alenu_servir/  (Directorio de configuración principal del proyecto)
+        settings.py
+        urls.py
+    inicio/  (Aplicación "inicio")
+        models.py
+        views.py
+        templates/
+            inicio/
+                inicio.html
+        urls.py
+    contacto/  (Aplicación "contacto")
+        models.py
+        views.py
+        templates/
+            contacto/
+                contacto.html
+        urls.py
+    informacion_legal/  (Aplicación "informacion_legal")
+        models.py
+        views.py
+        templates/
+            informacion_legal/
+                informacion_legal.html
+        urls.py
+    programas/  (Aplicación "programas")
+        models.py
+        views.py
+        templates/
+            programas/
+                lista_programas.html
+                detalle_programa.html
+        urls.py
+    servicios/  (Aplicación "servicios")
+        models.py
+        views.py
+        templates/
+            servicios/
+                lista_servicios.html
+                detalle_servicio.html
+        urls.py
+    donaciones/  (Aplicación "donaciones")
+        models.py
+        views.py
+        templates/
+            donaciones/
+                donaciones.html
+        urls.py
+    participacion/  (Aplicación "participacion")
+        models.py
+        views.py
+        templates/
+            participacion/
+                participacion.html
+        urls.py
