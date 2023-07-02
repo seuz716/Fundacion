@@ -1,12 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contacto</title>
-</head>
-<body>
-    <h1>Información de contacto</h1>
-    <p>Dirección: {{ datos_contacto.direccion }}</p>
-    <p>Teléfono: {{ datos_contacto.telefono }}</p>
-    <p>Correo electrónico: {{ datos_contacto.correo }}</p>
-</body>
-</html>
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="display-4">Información de contacto</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="lead">Dirección: {{ datos_contacto.direccion }}</p>
+                <p class="lead">Teléfono: {{ datos_contacto.telefono }}</p>
+                <p class="lead">Correo electrónico: {{ datos_contacto.correo }}</p>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="h4">Redes Sociales</h2>
+                <ul class="list-unstyled">
+                    {% if datos_contacto.facebook %}
+                        <li>
+                            <a href="{{ datos_contacto.facebook }}" class="social-icon" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if datos_contacto.instagram %}
+                        <li>
+                            <a href="{{ datos_contacto.instagram }}" class="social-icon" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if datos_contacto.twitter %}
+                        <li>
+                            <a href="{{ datos_contacto.twitter }}" class="social-icon" target="_blank">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

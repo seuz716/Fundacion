@@ -1,11 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Información Legal</title>
-</head>
-<body>
-    <h1>Información Legal</h1>
-    <p>NIT: {{ datos_informacion_legal.nit }}</p>
-    <p>Objeto Social: {{ datos_informacion_legal.objeto_social }}</p>
-</body>
-</html>
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Información Legal</h1>
+      <hr>
+
+      <h3>Datos Generales</h3>
+      <p><strong>NIT:</strong> {{ object.nit }}</p>
+      <p><strong>Representante Legal:</strong> {{ object.representante_legal }}</p>
+      <p><strong>Dirección:</strong> {{ object.direccion }}</p>
+      <p><strong>Teléfono:</strong> {{ object.telefono }}</p>
+      <p><strong>Email:</strong> {{ object.email }}</p>
+
+      <h3>Detalles de la ESAL</h3>
+      <p><strong>Objeto Social:</strong></p>
+      <p>{{ object.objeto_social }}</p>
+      <p><strong>Fecha de Constitución:</strong> {{ object.fecha_constitucion }}</p>
+      <p><strong>Cámara de Comercio:</strong> {{ object.camara_comercio }}</p>
+      <p><strong>Registro DIAN:</strong> {{ object.registro_dian }}</p>
+
+      <h3>Certificado ESAL</h3>
+      <p><strong>Certificado:</strong></p>
+      <a href="{{ object.certificado_esal.url }}">Descargar Certificado</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

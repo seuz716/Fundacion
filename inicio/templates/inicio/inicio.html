@@ -1,22 +1,42 @@
-<!-- templates/inicio/inicio.html -->
-
 {% extends 'base/base.html' %}
 
+
+
 {% block content %}
-<div class="container">
-  <h1>Misión</h1>
-  <p>{{ inicio.mision }}</p>
-
-  <h1>Visión</h1>
-  <p>{{ inicio.vision }}</p>
-
-  <h1>Objetivo General</h1>
-  <p>{{ inicio.objetivo_general }}</p>
-
-  <h1>Objeto Social</h1>
-  <p>{{ inicio.objeto_social }}</p>
-
-  <h1>Objetivos Específicos</h1>
-  <p>{{ inicio.objetivos_especificos }}</p>
+<div class="containerinicio">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <div class="card mt-5">
+        <div class="card-body">
+          <h1 class="card-title">Misión</h1>
+          <p class="card-text">{{ inicio.mision }}</p>
+        </div>
+      </div>
+      <div class="card mt-5">
+        <div class="card-body">
+          <h1 class="card-title">Visión</h1>
+          <p class="card-text">{{ inicio.vision }}</p>
+        </div>
+      </div>
+      <div class="card mt-5">
+        <div class="card-body">
+          <h1 class="card-title">Objetivo General</h1>
+          <p class="card-text">{{ inicio.objetivo_general }}</p>
+        </div>
+      </div>
+      <div class="card mt-5">
+        <div class="card-body">
+          <h1 class="card-title">Objeto Social</h1>
+          <p class="card-text">{{ inicio.objeto_social }}</p>
+        </div>
+      </div>
+      <div class="card mt-5">
+        <div class="card-body">
+          <h1 class="card-title">Objetivos Específicos</h1>
+          <p class="card-text">{{ inicio.objetivos_especificos }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}

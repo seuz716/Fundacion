@@ -1,5 +1,7 @@
 alenu_servir/  (Directorio principal del proyecto)
     manage.py
+    media
+        logo.jpg    
     templates
         base
             base.html
