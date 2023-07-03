@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Lista de Programas</title>
+    </head>
+    <body>
+        <h1>Programas</h1>
+        <ul>
+            {% for programa in programas %}
+                <li><a href="{% url 'detalle_programa' programa.id %}">{{ programa.titulo }}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+    </html>
+{% endblock %}

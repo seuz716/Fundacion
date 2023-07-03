@@ -1,42 +1,18 @@
 {% extends 'base/base.html' %}
 
-
-
 {% block content %}
-<div class="containerinicio">
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <div class="card mt-5">
-        <div class="card-body">
-          <h1 class="card-title">Misión</h1>
-          <p class="card-text">{{ inicio.mision }}</p>
+  <div class="container-fluid bg-light py-5" style="background-image: url('/media/17.jpg'); background-size: cover;">
+    <h1 class="text-center mt-5">QUIENES SOMOS</h1>
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-6">
+        <div class="text-center mb-4">
+          <img src="/media/logo.jpg" alt="Logo" class="img-fluid rounded-circle" style="border: 2px solid #ccc; width: 200px; height: 200px;">
         </div>
-      </div>
-      <div class="card mt-5">
-        <div class="card-body">
-          <h1 class="card-title">Visión</h1>
-          <p class="card-text">{{ inicio.vision }}</p>
-        </div>
-      </div>
-      <div class="card mt-5">
-        <div class="card-body">
-          <h1 class="card-title">Objetivo General</h1>
-          <p class="card-text">{{ inicio.objetivo_general }}</p>
-        </div>
-      </div>
-      <div class="card mt-5">
-        <div class="card-body">
-          <h1 class="card-title">Objeto Social</h1>
-          <p class="card-text">{{ inicio.objeto_social }}</p>
-        </div>
-      </div>
-      <div class="card mt-5">
-        <div class="card-body">
-          <h1 class="card-title">Objetivos Específicos</h1>
-          <p class="card-text">{{ inicio.objetivos_especificos }}</p>
-        </div>
+        <p class="text-justify" style="background-color: rgba(255, 255, 255, 0.7); padding: 15px;">Fundación ALENU es una entidad sin ánimo de lucro, de carácter privado y con representación legal, cuyo objeto de estudio y trabajo está enfocado a la población vulnerable tomando como base el individuo, la familia y la sociedad, creada en el año 2016 e integrada por: Mónica Lucia García Botina, (psicóloga y representante legal) Grimanesa Rodríguez (Lic. en Educación Preescolar y Coordinadora) Lady Armero (Gestora Social), Ana Suárez (Gestora Social), personas dotadas de compromiso, idoneidad, empatía y responsabilidad para atender a la población en sus diferentes problemáticas.</p>
+        <p class="text-justify" style="background-color: rgba(255, 255, 255, 0.7); padding: 15px;">Se crea con la finalidad de apoyar las necesidades más apremiantes en educación, alimentación, orientación psicosocial a población vulnerable de los barrios con mayor índice de pobreza y marginalidad del municipio de Pasto, principalmente a niños, niñas y adolescentes inmersos en dinámicas de violencia intrafamiliar, consumo de SPA, víctimas del conflicto armado, desplazamiento y migrantes. Se busca el crecimiento humano basado en la integralidad para un adecuado desarrollo en el entorno familiar y social.</p>
+        <p class="text-justify" style="background-color: rgba(255, 255, 255, 0.7); padding: 15px;">El nombre que recibe la Fundación se toma de una palabra Hebrea ALENU que significa El Deber de Servir y está ligado al compromiso de sus integrantes con la gestión social y la obligación de poner sus conocimientos y habilidades al servicio de los más necesitados fundamentados en los valores Cristianos, de amor, bondad, generosidad.</p>
       </div>
     </div>
   </div>
-</div>
 {% endblock %}
+

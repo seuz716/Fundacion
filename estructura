@@ -14,6 +14,8 @@ alenu_servir/  (Directorio principal del proyecto)
         templates/
             inicio/
                 inicio.html
+                signup.html
+                valores.html
         urls.py
     contacto/  (Aplicación "contacto")
         models.py
