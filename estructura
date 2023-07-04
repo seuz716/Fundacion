@@ -1,9 +1,10 @@
 alenu_servir/  (Directorio principal del proyecto)
     db.sqlite3
-    manage.txt
-    render.yamal
+    manage.py
+    render.yaml
     build.sh
-    requirements.t
+    requirements.txt
+
     media/
         logo.jpg
            1.jpg
@@ -20,6 +21,8 @@ alenu_servir/  (Directorio principal del proyecto)
     alenu_servir/  (Directorio de configuración principal del proyecto)
         settings.py
         urls.py
+        settings.py
+        wsgi.py
     inicio/  (Aplicación "inicio")
         models.py
         views.py
