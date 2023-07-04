@@ -1,32 +1,3 @@
-# Ignorar archivos generados por Django
-*.pyc
-*.pyo
-__pycache__
-
-# Ignorar el archivo de configuración local de Django
-settings_local.py
-
-# Ignorar el archivo de base de datos SQLite
 db.sqlite3
-
-# Ignorar archivos estáticos recopilados
-staticfiles/
-
-# Ignorar archivos de registro
-logs/
-
-# Ignorar archivos de respaldo y temporales
-*.bak
-*.swp
-*.~*
-
-# Ignorar el directorio de entorno virtual (si se utiliza)
-venv/
-
-# Ignorar archivos de caché y migraciones
-*.cache
-*.log
-*.pid
-*.coverage
-.mypy_cache/
-migrations/
+venv
+_pycache_
