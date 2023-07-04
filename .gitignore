@@ -1,12 +1,32 @@
-# Archivos y directorios generados por Django
+# Ignorar archivos generados por Django
 *.pyc
-__pycache__/
+*.pyo
+__pycache__
+
+# Ignorar el archivo de configuración local de Django
+settings_local.py
+
+# Ignorar el archivo de base de datos SQLite
 db.sqlite3
 
-# Archivos de configuración local (ajústalos según tus necesidades)
-/config/settings_local.py
-/config/.env
+# Ignorar archivos estáticos recopilados
+staticfiles/
 
-# Otros archivos y directorios específicos de tu proyecto
-/media/
-/static/
+# Ignorar archivos de registro
+logs/
+
+# Ignorar archivos de respaldo y temporales
+*.bak
+*.swp
+*.~*
+
+# Ignorar el directorio de entorno virtual (si se utiliza)
+venv/
+
+# Ignorar archivos de caché y migraciones
+*.cache
+*.log
+*.pid
+*.coverage
+.mypy_cache/
+migrations/
