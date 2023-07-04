@@ -1,0 +1,21 @@
+services:
+  - name: web
+    env:
+      - key: DJANGO_SETTINGS_MODULE
+        value: alenu_servir.settings
+    buildCommand: python manage.py collectstatic --noinput
+    startCommand: gunicorn alenu_servir.wsgi --bind 0.0.0.0:$PORT
+
+build:
+  # Si estás utilizando Docker para construir tu imagen, puedes especificar el Dockerfile
+  # dockerfilePath: Dockerfile
+
+env:
+  - key: SECRET_KEY
+    # Aquí puedes especificar el valor de tu SECRET_KEY, ya sea directamente o a través de variables de entorno
+
+routes:
+  - path: /
+    destination:
+      port: web
+    # Puedes especificar redirecciones o configuraciones adicionales de rutas aquí
