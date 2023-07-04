@@ -1,6 +1,9 @@
 alenu_servir/  (Directorio principal del proyecto)
     db.sqlite3
-    manage.py
+    manage.txt
+    render.yamal
+    build.sh
+    requirements.t
     media/
         logo.jpg
            1.jpg
