@@ -1,17 +1,24 @@
-services:
-  - name: web
-    env:
-      - key: DJANGO_SETTINGS_MODULE
-        value: alenu_servir.settings
-    buildCommand: python manage.py collectstatic --noinput
-    startCommand: gunicorn alenu_servir.wsgi --bind 0.0.0.0:$PORT
-
 env:
-  - key: SECRET_KEY
-    # Aquí puedes especificar el valor de tu SECRET_KEY, ya sea directamente o a través de variables de entorno
+  - python=3.8
 
-routes:
-  - path: /
-    destination:
-      port: web
-    # Puedes especificar redirecciones o configuraciones adicionales de rutas aquí
+buildCommand:
+  - ./build.sh
+
+publish:
+  - cp db.sqlite3 alenu_servir/db.sqlite3
+
+Root Directory: alenu_servir/
+
+Static Sites:
+  - Source Directory: static
+    Headers:
+      - Key: Cache-Control
+        Value: public, max-age=0, must-revalidate
+
+Routes:
+  - src: /static
+    dest: /static
+  - src: /media
+    dest: /media
+  - src: /*
+    dest: /alenu_servir/wsgi.py
