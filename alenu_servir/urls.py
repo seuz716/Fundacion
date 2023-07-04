@@ -9,7 +9,9 @@ from inicio import views  # Importa las vistas de la aplicación 'inicio'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('signup/', views.signup, name='signup'),  
+    path('signup/', views.signup, name='signup'),
+    path('signin/', views.signin, name='signin'),
+    path('signout/', views.signout, name='signout'),  # Corrección en el nombre de la vista
     path('', include('inicio.urls')),
     path('contacto/', include('contacto.urls')),
     path('informacion_legal/', include('informacion_legal.urls')),

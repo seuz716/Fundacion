@@ -1,9 +1,18 @@
 alenu_servir/  (Directorio principal del proyecto)
+    db.sqlite3
     manage.py
-    media
-        logo.jpg    
-    templates
-        base
+    media/
+        logo.jpg
+           1.jpg
+           2.jpg
+           3.jpg        
+    static/
+        css/
+            estilo.css
+        js/
+            script.js
+    templates/
+        base/
             base.html
     alenu_servir/  (Directorio de configuración principal del proyecto)
         settings.py
@@ -15,6 +24,7 @@ alenu_servir/  (Directorio principal del proyecto)
             inicio/
                 inicio.html
                 signup.html
+                signout.html
                 valores.html
         urls.py
     contacto/  (Aplicación "contacto")
